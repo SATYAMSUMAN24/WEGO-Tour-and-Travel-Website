@@ -1,0 +1,221 @@
+
+/* Modern Hero Enhancements */
+.modern-hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.modern-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  opacity: 0.3;
+}
+
+.search-container {
+  position: relative;
+  z-index: 2;
+  margin: 2rem 0;
+}
+
+.search-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-field {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #667eea;
+  z-index: 3;
+}
+
+.modern-select {
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 15px 12px 45px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.modern-select:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  outline: none;
+}
+
+.modern-search-btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  transition: all 0.3s ease;
+}
+
+.modern-search-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.4);
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-item h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Enhanced Animations */
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+.slideInUp {
+  animation-name: slideInUp;
+  animation-delay: 0.3s;
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-delay: 0.6s;
+}
+
+/* Service Cards Enhancement */
+.service-item {
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border-color: #667eea;
+}
+
+.service-item:hover .fa {
+  transform: scale(1.1);
+  color: #667eea !important;
+}
+
+/* Package Cards Enhancement */
+.package-item {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.package-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.package-item img {
+  transition: all 0.3s ease;
+}
+
+.package-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .search-card {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .modern-hero {
+    padding: 3rem 0;
+  }
+  
+  .stat-item h3 {
+    font-size: 2rem;
+  }
+}
+
+/* Button Enhancements */
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+}
+
+/* Text Enhancements */
+.text-primary {
+  color: #667eea !important;
+}
+
+.bg-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
