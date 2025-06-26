@@ -1,1 +1,1 @@
-# WEGO-Tour-and-Travel-Website
+# WEGO Tour and Travel Website
